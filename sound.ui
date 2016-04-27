@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BackgroundMusic</class>
+ <widget class="QMainWindow" name="BackgroundMusic">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>326</width>
+    <height>401</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>201</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Aharoni</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::SingleSelection</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <property name="gridStyle">
+     <enum>Qt::DashLine</enum>
+    </property>
+    <property name="columnCount">
+     <number>2</number>
+    </property>
+    <column>
+     <property name="text">
+      <string>歌曲</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>类型</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>130</y>
+      <width>95</width>
+      <height>142</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Aharoni</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Mode</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="loopButton">
+       <property name="font">
+        <font>
+         <family>Aharoni</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton { background-color: rgb(0, 170, 255); border-radius: 9px; color: rgb(255, 255, 255); } QPushButton:hover { background-color: rgb(52, 200, 144); }</string>
+       </property>
+       <property name="text">
+        <string>全部循环</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="randomButton">
+       <property name="font">
+        <font>
+         <family>Aharoni</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton { background-color: rgb(0, 170, 255); border-radius: 9px; color: rgb(255, 255, 255); } QPushButton:hover { background-color: rgb(52, 200, 144); }</string>
+       </property>
+       <property name="text">
+        <string>随机播放</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="itemLoopButton">
+       <property name="font">
+        <font>
+         <family>Aharoni</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton { background-color: rgb(0, 170, 255); border-radius: 9px; color: rgb(255, 255, 255); } QPushButton:hover { background-color: rgb(52, 200, 144); }</string>
+       </property>
+       <property name="text">
+        <string>单曲循环</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="sequentialButton">
+       <property name="font">
+        <font>
+         <family>Aharoni</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton { background-color: rgb(0, 170, 255); border-radius: 9px; color: rgb(255, 255, 255); } QPushButton:hover { background-color: rgb(52, 200, 144); }</string>
+       </property>
+       <property name="text">
+        <string>顺序播放</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>280</y>
+      <width>95</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Aharoni</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Tool</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="playButton">
+       <property name="font">
+        <font>
+         <family>Aharoni</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton { background-color: rgb(0, 170, 255); border-radius: 9px; color: rgb(255, 255, 255); } QPushButton:hover { background-color: rgb(52, 200, 144); }</string>
+       </property>
+       <property name="text">
+        <string>播放</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="stopButton">
+       <property name="font">
+        <font>
+         <family>Aharoni</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton { background-color: rgb(0, 170, 255); border-radius: 9px; color: rgb(255, 255, 255); } QPushButton:hover { background-color: rgb(52, 200, 144); }</string>
+       </property>
+       <property name="text">
+        <string>停止</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="quitButton">
+       <property name="font">
+        <font>
+         <family>Aharoni</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton { background-color: rgb(0, 170, 255); border-radius: 9px; color: rgb(255, 255, 255); } QPushButton:hover { background-color: rgb(52, 200, 144); }</string>
+       </property>
+       <property name="text">
+        <string>返回</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>10</y>
+      <width>95</width>
+      <height>113</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Aharoni</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Operation</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QPushButton" name="importButton">
+       <property name="font">
+        <font>
+         <family>Aharoni</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton { background-color: rgb(0, 170, 255); border-radius: 9px; color: rgb(255, 255, 255); } QPushButton:hover { background-color: rgb(52, 200, 144); }</string>
+       </property>
+       <property name="text">
+        <string>导入歌曲</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="volumPlusButton">
+       <property name="font">
+        <font>
+         <family>Aharoni</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton { background-color: rgb(0, 170, 255); border-radius: 9px; color: rgb(255, 255, 255); } QPushButton:hover { background-color: rgb(52, 200, 144); }</string>
+       </property>
+       <property name="text">
+        <string>音量+</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="volumReduceButton">
+       <property name="font">
+        <font>
+         <family>Aharoni</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton { background-color: rgb(0, 170, 255); border-radius: 9px; color: rgb(255, 255, 255); } QPushButton:hover { background-color: rgb(52, 200, 144); }</string>
+       </property>
+       <property name="text">
+        <string>音量-</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="action_Quit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="action_SongList">
+   <property name="text">
+    <string>显示/隐藏播放列表</string>
+   </property>
+   <property name="toolTip">
+    <string>显示/隐藏播放列表</string>
+   </property>
+  </action>
+  <action name="action_Last">
+   <property name="text">
+    <string>上一首</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Left</string>
+   </property>
+  </action>
+  <action name="action_Next">
+   <property name="text">
+    <string>下一首</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Right</string>
+   </property>
+  </action>
+  <action name="action_Play">
+   <property name="text">
+    <string>播放</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F5</string>
+   </property>
+  </action>
+  <action name="action_Stop">
+   <property name="text">
+    <string>停止</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F2</string>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="text">
+    <string>关于我们</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="action_Support">
+   <property name="text">
+    <string>关于酷音听听</string>
+   </property>
+   <property name="toolTip">
+    <string>关于酷音听听</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F1</string>
+   </property>
+  </action>
+  <action name="action_Import">
+   <property name="text">
+    <string>导入本地歌曲</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="action_SoundPlus">
+   <property name="text">
+    <string>音量+(20%)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Up</string>
+   </property>
+  </action>
+  <action name="action_SoundReduce">
+   <property name="text">
+    <string>音量-(20%)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Down</string>
+   </property>
+  </action>
+  <action name="action_Mode1">
+   <property name="text">
+    <string>列表循环</string>
+   </property>
+   <property name="toolTip">
+    <string>列表循环</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+1</string>
+   </property>
+  </action>
+  <action name="action_Mode2">
+   <property name="text">
+    <string>随机播放</string>
+   </property>
+   <property name="toolTip">
+    <string>随机播放</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+2</string>
+   </property>
+  </action>
+  <action name="action_Mode3">
+   <property name="text">
+    <string>单曲循环</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+3</string>
+   </property>
+  </action>
+  <action name="action_Mode4">
+   <property name="text">
+    <string>顺序播放</string>
+   </property>
+   <property name="toolTip">
+    <string>顺序播放</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+4</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="source.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>quitButton</sender>
+   <signal>clicked()</signal>
+   <receiver>BackgroundMusic</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>266</x>
+     <y>266</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>318</x>
+     <y>264</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
